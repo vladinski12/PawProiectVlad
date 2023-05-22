@@ -45,7 +45,12 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.button5 = new System.Windows.Forms.Button();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.vizualizareRuteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.vizualizareSoferiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.vizualizareMasiniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -68,7 +73,7 @@
 			// dateTimePicker1
 			// 
 			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-			this.dateTimePicker1.Location = new System.Drawing.Point(126, 109);
+			this.dateTimePicker1.Location = new System.Drawing.Point(126, 163);
 			this.dateTimePicker1.Name = "dateTimePicker1";
 			this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
 			this.dateTimePicker1.TabIndex = 2;
@@ -76,7 +81,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(12, 114);
+			this.label2.Location = new System.Drawing.Point(12, 168);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(86, 16);
 			this.label2.TabIndex = 3;
@@ -85,7 +90,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(12, 163);
+			this.label3.Location = new System.Drawing.Point(12, 211);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(78, 16);
 			this.label3.TabIndex = 4;
@@ -94,14 +99,14 @@
 			// dateTimePicker2
 			// 
 			this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-			this.dateTimePicker2.Location = new System.Drawing.Point(126, 163);
+			this.dateTimePicker2.Location = new System.Drawing.Point(126, 206);
 			this.dateTimePicker2.Name = "dateTimePicker2";
 			this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
 			this.dateTimePicker2.TabIndex = 5;
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(348, 34);
+			this.button1.Location = new System.Drawing.Point(348, 49);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 52);
 			this.button1.TabIndex = 6;
@@ -111,7 +116,7 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(697, 52);
+			this.button2.Location = new System.Drawing.Point(713, 49);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(75, 46);
 			this.button2.TabIndex = 7;
@@ -137,7 +142,7 @@
 			// 
 			// button3
 			// 
-			this.button3.Location = new System.Drawing.Point(697, 183);
+			this.button3.Location = new System.Drawing.Point(713, 182);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(75, 46);
 			this.button3.TabIndex = 10;
@@ -158,7 +163,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(453, 52);
+			this.label4.Location = new System.Drawing.Point(449, 64);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(42, 16);
 			this.label4.TabIndex = 12;
@@ -167,7 +172,7 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(449, 163);
+			this.label5.Location = new System.Drawing.Point(449, 197);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(46, 16);
 			this.label5.TabIndex = 13;
@@ -186,6 +191,40 @@
 			// errorProvider1
 			// 
 			this.errorProvider1.ContainerControl = this;
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vizualizareRuteToolStripMenuItem,
+            this.vizualizareSoferiToolStripMenuItem,
+            this.vizualizareMasiniToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+			this.menuStrip1.TabIndex = 15;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// vizualizareRuteToolStripMenuItem
+			// 
+			this.vizualizareRuteToolStripMenuItem.Name = "vizualizareRuteToolStripMenuItem";
+			this.vizualizareRuteToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
+			this.vizualizareRuteToolStripMenuItem.Text = "Vizualizare Rute";
+			this.vizualizareRuteToolStripMenuItem.Click += new System.EventHandler(this.vizualizareRuteToolStripMenuItem_Click);
+			// 
+			// vizualizareSoferiToolStripMenuItem
+			// 
+			this.vizualizareSoferiToolStripMenuItem.Name = "vizualizareSoferiToolStripMenuItem";
+			this.vizualizareSoferiToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+			this.vizualizareSoferiToolStripMenuItem.Text = "Vizualizare Soferi";
+			this.vizualizareSoferiToolStripMenuItem.Click += new System.EventHandler(this.vizualizareSoferiToolStripMenuItem_Click);
+			// 
+			// vizualizareMasiniToolStripMenuItem
+			// 
+			this.vizualizareMasiniToolStripMenuItem.Name = "vizualizareMasiniToolStripMenuItem";
+			this.vizualizareMasiniToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+			this.vizualizareMasiniToolStripMenuItem.Text = "Vizualizare Masini";
+			this.vizualizareMasiniToolStripMenuItem.Click += new System.EventHandler(this.vizualizareMasiniToolStripMenuItem_Click);
 			// 
 			// Form2
 			// 
@@ -207,9 +246,13 @@
 			this.Controls.Add(this.dateTimePicker1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.menuStrip1);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form2";
 			this.Text = "Form2";
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -233,5 +276,9 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.ErrorProvider errorProvider1;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem vizualizareRuteToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem vizualizareSoferiToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem vizualizareMasiniToolStripMenuItem;
 	}
 }
