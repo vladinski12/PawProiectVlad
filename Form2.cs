@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -9,6 +10,9 @@ namespace PawProiectVlad
 	public partial class Form2 : Form
 	{
 		private List<Transporturi> transporturi = new List<Transporturi>();
+		List<Ruta> rute = new List<Ruta>();
+		List<Sofer> soferi = new List<Sofer>();
+		List<Masina> masini = new List<Masina>();
 		public Form2()
 		{
 			InitializeComponent();
@@ -24,7 +28,7 @@ namespace PawProiectVlad
 			bf = new BinaryFormatter();
 			if (new FileInfo("rute.dat").Length != 0)
 			{
-				List<Ruta> rute = (List<Ruta>)bf.Deserialize(fs);
+				rute = (List<Ruta>)bf.Deserialize(fs);
 				foreach (Ruta ruta in rute)
 				{
 					comboBox1.Items.Add(ruta.ToString());
@@ -36,7 +40,7 @@ namespace PawProiectVlad
 			bf = new BinaryFormatter();
 			if (new FileInfo("soferi.dat").Length != 0)
 			{
-				List<Sofer> soferi = (List<Sofer>)bf.Deserialize(fs);
+				soferi = (List<Sofer>)bf.Deserialize(fs);
 				foreach (Sofer sofer in soferi)
 				{
 					checkedListBox1.Items.Add(sofer.ToString());
@@ -48,7 +52,7 @@ namespace PawProiectVlad
 			bf = new BinaryFormatter();
 			if (new FileInfo("masini.dat").Length != 0)
 			{
-				List<Masina> masini = (List<Masina>)bf.Deserialize(fs);
+				masini = (List<Masina>)bf.Deserialize(fs);
 				foreach (Masina masina in masini)
 				{
 					checkedListBox2.Items.Add(masina.ToString());
@@ -104,6 +108,10 @@ namespace PawProiectVlad
 			{
 				MessageBox.Show("Data de inceput nu poate fi inaintea datei de sfarsit!");
 			}
+			else if (checkedListBox1.CheckedItems.Count != checkedListBox2.CheckedItems.Count)
+			{
+				MessageBox.Show("Numarul de soferi trebuie sa fie egal cu numarul masinilor!");
+			}
 			else
 			{
 
@@ -112,7 +120,7 @@ namespace PawProiectVlad
 				Ruta r = new Ruta(rutaStrings[0].Trim(), rutaStrings[1].Trim(), rutaStrings[2].Trim(), Double.Parse(rutaStrings[3].Trim()));
 
 				List<Sofer> soferi = new List<Sofer>();
-				foreach (String item in checkedListBox1.Items)
+				foreach (String item in checkedListBox1.CheckedItems)
 				{
 					string[] soferStrings = item.Split(',');
 					for (int i = 0; i < soferStrings.Length; i = i + 4)
@@ -123,7 +131,7 @@ namespace PawProiectVlad
 				}
 
 				List<Masina> masini = new List<Masina>();
-				foreach (String item in checkedListBox2.Items)
+				foreach (String item in checkedListBox2.CheckedItems)
 				{
 					string[] masinaStrings = item.Split(',');
 					for (int i = 0; i < masinaStrings.Length; i = i + 4)
@@ -151,6 +159,24 @@ namespace PawProiectVlad
 		{
 			this.Close();
 			new Form1().Show();
+		}
+
+		private void vizualizareRuteToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Close();
+			new Form7(new ArrayList(rute)).Show();
+		}
+
+		private void vizualizareSoferiToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Close();
+			new Form7(new ArrayList(soferi)).Show();
+		}
+
+		private void vizualizareMasiniToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Close();
+			new Form7(new ArrayList(masini)).Show();
 		}
 	}
 }
