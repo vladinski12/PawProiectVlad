@@ -59,21 +59,21 @@
             this.inapoiToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(796, 28);
+			this.menuStrip1.Size = new System.Drawing.Size(796, 30);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// printToolStripMenuItem
 			// 
 			this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-			this.printToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
-			this.printToolStripMenuItem.Text = "Print";
+			this.printToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
+			this.printToolStripMenuItem.Text = "&Print";
 			this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
 			// 
 			// inapoiToolStripMenuItem
 			// 
 			this.inapoiToolStripMenuItem.Name = "inapoiToolStripMenuItem";
-			this.inapoiToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+			this.inapoiToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
 			this.inapoiToolStripMenuItem.Text = "Inapoi";
 			this.inapoiToolStripMenuItem.Click += new System.EventHandler(this.inapoiToolStripMenuItem_Click);
 			// 

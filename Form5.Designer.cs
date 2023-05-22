@@ -131,11 +131,11 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(180, 352);
+			this.button2.Location = new System.Drawing.Point(180, 340);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(75, 47);
 			this.button2.TabIndex = 9;
-			this.button2.Text = "Adauga Masina";
+			this.button2.Text = "Adauga &Masina";
 			this.button2.UseVisualStyleBackColor = true;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
