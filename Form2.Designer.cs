@@ -45,7 +45,12 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.button5 = new System.Windows.Forms.Button();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.vizualizareRuteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.vizualizareSoferiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.vizualizareMasiniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -187,6 +192,40 @@
 			// 
 			this.errorProvider1.ContainerControl = this;
 			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vizualizareRuteToolStripMenuItem,
+            this.vizualizareSoferiToolStripMenuItem,
+            this.vizualizareMasiniToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+			this.menuStrip1.TabIndex = 15;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// vizualizareRuteToolStripMenuItem
+			// 
+			this.vizualizareRuteToolStripMenuItem.Name = "vizualizareRuteToolStripMenuItem";
+			this.vizualizareRuteToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
+			this.vizualizareRuteToolStripMenuItem.Text = "Vizualizare Rute";
+			this.vizualizareRuteToolStripMenuItem.Click += new System.EventHandler(this.vizualizareRuteToolStripMenuItem_Click);
+			// 
+			// vizualizareSoferiToolStripMenuItem
+			// 
+			this.vizualizareSoferiToolStripMenuItem.Name = "vizualizareSoferiToolStripMenuItem";
+			this.vizualizareSoferiToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+			this.vizualizareSoferiToolStripMenuItem.Text = "Vizualizare Soferi";
+			this.vizualizareSoferiToolStripMenuItem.Click += new System.EventHandler(this.vizualizareSoferiToolStripMenuItem_Click);
+			// 
+			// vizualizareMasiniToolStripMenuItem
+			// 
+			this.vizualizareMasiniToolStripMenuItem.Name = "vizualizareMasiniToolStripMenuItem";
+			this.vizualizareMasiniToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+			this.vizualizareMasiniToolStripMenuItem.Text = "Vizualizare Masini";
+			this.vizualizareMasiniToolStripMenuItem.Click += new System.EventHandler(this.vizualizareMasiniToolStripMenuItem_Click);
+			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -207,9 +246,13 @@
 			this.Controls.Add(this.dateTimePicker1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.menuStrip1);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form2";
 			this.Text = "Form2";
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -233,5 +276,9 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.ErrorProvider errorProvider1;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem vizualizareRuteToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem vizualizareSoferiToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem vizualizareMasiniToolStripMenuItem;
 	}
 }
