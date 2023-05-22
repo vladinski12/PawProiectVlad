@@ -32,6 +32,8 @@
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.adaugaTransportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.graficToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.incarcaDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.exportaDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -56,7 +58,9 @@
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adaugaTransportToolStripMenuItem,
-            this.graficToolStripMenuItem});
+            this.graficToolStripMenuItem,
+            this.incarcaDateToolStripMenuItem,
+            this.exportaDateToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -76,6 +80,20 @@
 			this.graficToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
 			this.graficToolStripMenuItem.Text = "Grafic";
 			this.graficToolStripMenuItem.Click += new System.EventHandler(this.graficToolStripMenuItem_Click);
+			// 
+			// incarcaDateToolStripMenuItem
+			// 
+			this.incarcaDateToolStripMenuItem.Name = "incarcaDateToolStripMenuItem";
+			this.incarcaDateToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+			this.incarcaDateToolStripMenuItem.Text = "Importa Date";
+			this.incarcaDateToolStripMenuItem.Click += new System.EventHandler(this.incarcaDateToolStripMenuItem_Click);
+			// 
+			// exportaDateToolStripMenuItem
+			// 
+			this.exportaDateToolStripMenuItem.Name = "exportaDateToolStripMenuItem";
+			this.exportaDateToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+			this.exportaDateToolStripMenuItem.Text = "Exporta Date";
+			this.exportaDateToolStripMenuItem.Click += new System.EventHandler(this.exportaDateToolStripMenuItem_Click);
 			// 
 			// Form1
 			// 
@@ -101,6 +119,8 @@
 		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.ToolStripMenuItem adaugaTransportToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem graficToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem incarcaDateToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem exportaDateToolStripMenuItem;
 	}
 }
 

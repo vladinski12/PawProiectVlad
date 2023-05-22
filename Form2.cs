@@ -104,6 +104,10 @@ namespace PawProiectVlad
 			{
 				MessageBox.Show("Data de inceput nu poate fi inaintea datei de sfarsit!");
 			}
+			else if (checkedListBox1.Items.Count != checkedListBox2.Items.Count)
+			{
+				MessageBox.Show("Numarul de soferi trebuie sa fie egal cu numarul masininlor!");
+			}
 			else
 			{
 
