@@ -56,7 +56,7 @@ namespace PawProiectVlad
 			float cx = rect.Width / 2f;
 			float cy = rect.Height / 2f;
 			float radius = Math.Min(cx, cy) * 0.8f;
-			Brush[] brushes = { Brushes.Red, Brushes.Blue, Brushes.Green, Brushes.Orange, Brushes.Purple, Brushes.Magenta, Brushes.Yellow }; // example colors
+			Brush[] brushes = { Brushes.Red, Brushes.Blue, Brushes.Green, Brushes.Orange, Brushes.Purple, Brushes.Magenta, Brushes.Yellow };
 			Font font = new Font("Arial", 12f, FontStyle.Bold);
 
 			for (int i = 0; i < data.Length; i++)
@@ -90,7 +90,7 @@ namespace PawProiectVlad
 			float cx = rect.Width / 2f;
 			float cy = rect.Height / 2f;
 			float radius = Math.Min(cx, cy) * 0.8f;
-			Brush[] brushes = { Brushes.Red, Brushes.Blue, Brushes.Green, Brushes.Orange, Brushes.Purple, Brushes.Magenta, Brushes.Yellow }; // example colors
+			Brush[] brushes = { Brushes.Red, Brushes.Blue, Brushes.Green, Brushes.Orange, Brushes.Purple, Brushes.Magenta, Brushes.Yellow };
 			Font font = new Font("Arial", 12f, FontStyle.Bold);
 
 			for (int i = 0; i < data.Length; i++)
